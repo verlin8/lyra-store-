@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VERLIN SMM - Suntik Sosmed Gratis</title>
+<style>
+body{margin:0;font-family:Arial;background:#080810;color:#fff}
+.hero{background:linear-gradient(135deg,#ff006a,#7000ff);padding:40px 20px;text-align:center}
+.hero h1{font-size:32px;margin:0;font-weight:900}
+.box{background:#151525;border-radius:20px;padding:20px;margin:15px;border:1px solid #222}
+input,select{width:100%;padding:14px;border-radius:12px;border:1px solid #333;background:#0a0a14;color:#fff;margin:8px 0}
+.btn{width:100%;padding:16px;border:none;border-radius:12px;font-weight:900;font-size:16px;cursor:pointer;margin-top:10px}
+.btn-pink{background:linear-gradient(90deg,#ff006a,#7000ff);color:#fff}
+.btn-wa{background:#25D366;color:#fff}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:15px}
+.item{background:#151525;border-radius:15px;padding:15px;text-align:center;border:1px solid #222}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>SUNTIK SOSMED<br>GRATIS</h1>
+<p>🚀 Panel Verlin - 0878-1185-4174</p>
+</div>
+<div class="grid">
+<div class="item">❤️<br><b>IG<br>Followers</b><br>Gratis</div>
+<div class="item">🎵<br><b>TikTok<br>Views</b><br>Gratis</div>
+<div class="item">▶️<br><b>YT<br>Subs</b><br>Gratis</div>
+<div class="item">👍<br><b>FB<br>Likes</b><br>Gratis</div>
+</div>
+<div class="box">
+<h3 style="margin:0 0 10px">🚀 Order Sekarang</h3>
+<input id="user" placeholder="Username @ tanpa @">
+<select id="layanan">
+<option>Pilih Layanan Gratis...</option>
+<option>IG Followers - 1000 Gratis</option>
+<option>TikTok Followers - 1000 Gratis</option>
+<option>TikTok Views - 50.000 Gratis</option>
+<option>IG Likes - 2000 Gratis</option>
+<option>YT Subs - 500 Gratis</option>
+</select>
+<button class="btn btn-pink" onclick="order()">SUNTIK VIA WA - GRATIS</button>
+<button class="btn btn-wa" onclick="chat()">💬 CHAT ADMIN WA</button>
+</div>
+<script>
+const NO="6287811854174";
+function order(){
+let u=document.getElementById('user').value;
+let l=document.getElementById('layanan').value;
+if(!u){alert('Isi username dulu!');return}
+let t=`Halo Kak Verlin! Mau order GRATIS:%0AUsername: @${u}%0ALayanan: ${l}`;
+window.open(`https://wa.me/${NO}?text=${t}`,'_blank');
+}
+function chat(){
+window.open(`https://wa.me/${NO}?text=Halo Kak Verlin mau tanya suntik sosmed`,'_blank');
+}
+</script>
+</body>
+</html>
